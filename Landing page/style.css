@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color:black ;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    align-items: center;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+    opacity: 0.9;
+}
+#brand{
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    
+}
+#brand{
+    margin: 1px 3px;
+}
+
+#brand img{
+    height: 99px;
+    margin: 3px 6px;
+    width: 100%;
+}
+nav ul li{
+    cursor: pointer;
+    font-weight: 500;
+    padding: 3px 35px;
+    color: rgb(232, 152, 54);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 1px solid bisque;
+    border-radius: 18px;
+}
+nav ul li:hover{
+    color: rgb(78, 47, 8);
+    background-color:rgb(210, 131, 35);
+    border-radius: 18px;
+    
+    text-decoration: underline;
+}
+nav .cta{
+    color: bisque;
+    border: none;
+    background-color: rgb(84, 32, 5);
+    padding: 6px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav .cta:hover{
+    background-color: rgb(87, 51, 7);
+    text-decoration: underline;
+}
+.the-menu{
+    display: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    
+    width: 93%;
+    
+}
+img{
+    margin-top: 50px;
+    width: 600px;
+    
+}
+h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(135, 77, 5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(107, 60, 2);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+ section h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: rgb(214, 122, 9);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(107, 60, 2);
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#offers .offer img{
+    align-items: center;
+    height: 450px;
+   margin: auto;
+   display: block;
+   width: 96%;
+    align-items: center;
+    border: 2px solid bisque;
+}
+h4{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(128, 81, 24);;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section p{
+    color: #8c4205;
+}
+section button{
+    color: bisque;
+    border: none;
+    background-color: black;
+    border: 1px solid bisque;
+    padding: 3px 150px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    align-items: center;
+   
+}
+section button:hover{
+    text-decoration: underline;
+    background-color:rgb(210, 131, 35)
+}
+button span{
+    font-size: 1rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+
+#services .box{ 
+  /*  border: 2px solid brown;*/
+    padding: 15px;
+    margin: 2px 5px;
+    border-radius: 28px;
+    background: black;
+    margin-bottom: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+
+#services .box img{ 
+   height: 180px;
+   margin: auto;
+   display: block;
+   width: 90%;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+#services .box h2{
+    cursor: pointer;
+}
+footer{
+    background: rgb(198, 178, 178);
+    color: rgb(121, 68, 7);
+    text-align: center;
+    
+    text-align: end;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+    nav ul, nav button{
+        display: none;
+    }
+    .the-menu{
+        display: block;
+        cursor: pointer;
+        color: bisque;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        text-align: center;
+    }
+    #brand{text-align: center;
+
+
+    }
+   
+    img{
+        width: 300px;
+    }
+    .mobile-menu:hover{
+        text-decoration: underline;
+    
+    border-radius: 5px;
+    }
+    #services{
+        flex-direction: column;
+    }
+    
+    #services .box { 
+        padding: 14px;
+        margin: 2px 0px; 
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+
+
